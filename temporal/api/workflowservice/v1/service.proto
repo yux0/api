@@ -256,6 +256,9 @@ service WorkflowService {
     rpc TerminateWorkflowExecution (TerminateWorkflowExecutionRequest) returns (TerminateWorkflowExecutionResponse) {
     }
 
+    rpc PauseWorkflowExecution (PauseWorkflowExecutionRequest) returns (PauseWorkflowExecutionResponse) {
+    }
+
     // ListOpenWorkflowExecutions is a visibility API to list the open executions in a specific namespace.
     rpc ListOpenWorkflowExecutions (ListOpenWorkflowExecutionsRequest) returns (ListOpenWorkflowExecutionsResponse) {
     }
